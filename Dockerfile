@@ -22,5 +22,7 @@ RUN mkdir /app
 WORKDIR /app
 COPY ./app app
 
+#ENV PYTHONPATH "${PYTONPATH}:/app"
+
 RUN adduser user
 USER user
